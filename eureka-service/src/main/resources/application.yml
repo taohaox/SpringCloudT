@@ -1,0 +1,21 @@
+server:
+  port: 8761
+  
+#通过eureka.client.registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server.
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false #是否将eureka自身作为应用注册到eureka注册中心
+    fetchRegistry: false
+    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#      为eureka添加安全认证
+      defaultZone: http://user:password@${eureka.instance.hostname}:${server.port}/eureka/
+    
+security:
+  basic:
+    enabled: true
+  user:
+    name: root
+    password: 123456

@@ -1,0 +1,15 @@
+server:
+  port: 8800
+spring:
+  application:
+    name: consumer-movie #注册到eureka的服务名称   
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:123456@localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    
+service:
+  name:
+    user: provider-user
