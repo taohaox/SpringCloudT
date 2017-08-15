@@ -5,7 +5,7 @@ eureka:
   instance:
     prefer-ip-address: true
 server:
-  port: 8763
+  port: 8765
 spring:
   application:
     name: provider-user #注册到eureka的服务名称 

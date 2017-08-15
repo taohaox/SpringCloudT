@@ -11,6 +11,7 @@ import org.springframework.web.client.RestTemplate;
 public class ConsumerMovieApplication {
 	
     @Bean
+//    @LoadBalanced//负载均衡  ribbon
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }
