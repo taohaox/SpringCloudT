@@ -30,7 +30,7 @@
       <module name="eureka-service" target="1.8" />
       <module name="provider-user" target="1.8" />
       <module name="service" target="1.8" />
-      <module name="SpringcloundT" target="1.8" />
+      <module name="SpringcloundT" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
